@@ -57,3 +57,18 @@ a:active
 {
     color:red;
 }
+
+button
+{
+    border-radius: 2.5pt;
+}
+
+button:hover
+{
+    border-color: orange;
+}
+
+button:active
+{
+    border-color:gray
+}
