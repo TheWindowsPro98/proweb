@@ -1,0 +1,11 @@
+ProWeb 1.3
+    - Confusingly, the initial release
+    - Added the Romhack Repository
+    - Added broken-ish link to the Self-Promo page
+    - Added links to the PC and Genesis versions of the Project Daisy repositories
+
+ProWeb 1.4
+    - Added the superior Johnvertising to all HTML-based webpages on my site
+        - Does not apply to the ancient Romhack pages borrowed from an earlier version of the site. They will stay unmodified as long as I am the webmaster.
+    - Added Self-Promo page, fixing link
+    - Removed Project Daisy links in favor of a seperate "Projects" link collection
