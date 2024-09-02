@@ -12,10 +12,34 @@
             background: #202020;
         }
     </style>
+    <header>
+        <a href="index.html"><img src="res/favicons/home.png">Home</a>
+        <a style="text-decoration: underline;" id="dlChevron"><img src="res/favicons/cd.png">Show Links >></a>
+        <a href="https://github.com/TheWindowsPro98/pxga-cursors" class="canHide"></a>
+        <a href="https://github.com/TheWindowsPro98/RegInfoMod" class="canHide"></a>
+        <a href="https://github.com/TheWindowsPro98/project-daisy-pc" class="canHide"></a>
+        <a href="https://github.com/TheWindowsPro98/sonic-1-sgdk-remake" class="canHide"></a>
+        <a href="https://github.com/TheWindowsPro98/project-daisy" class="canHide"></a>
+        <a href="https://github.com/TheWindowsPro98/project-blaze" class="canHide"></a>
+        <a href="https://github.com/TheWindowsPro98/smb-md" class="canHide"></a>
+        <a href="https://github.com/TheWindowsPro98/SVGI-Cursors" class="canHide"></a>
+        <script>
+            var dlChevron = document.getElementById("dlChevron");
+            var hideClass = document.getElementsByClassName("canHide");
+            dlChevron.addEventListener("click",clickListener);
+            function clickListener()
+            {
+                const linkStrings = ["PXGA Cursors","RegInfoMod","Project Daisy (PC Version)","Sonic 1 (SGDK Remake)","Project Daisy (SEGA Genesis Version)","Project Blaze","Super Mario Bros. for the SEGA Genesis","SVGI Cursors"];
+                for (var i = 0; i < hideClass.length; i++)
+                {
+                    hideClass[i].innerHTML = linkStrings[i];
+                }
+            }
+        </script>
+    </header>
     <body>
         <h1>Projects</h1>
         <h2>Some things that may or may not be worked on.</h2>
-        <a href="index.html">&larr;Home</a>
         <hr>
         <h3>The links on this site currently link to my repositories. This will be changed in the future to feature custom webpages.</h3>
         <br>

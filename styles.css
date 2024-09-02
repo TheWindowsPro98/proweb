@@ -3,6 +3,27 @@
 	src: url("res/fonts/ComicNeue-Regular.ttf");
 }
 
+header
+{
+	outline: 2px outset;
+	background-color: #a0a0a0;
+	color: black;
+	height: 23px;
+	text-align: left;
+}
+
+header a
+{
+	color: black;
+	transition: color 0s;
+}
+
+header a:hover, header a:active
+{
+	background-color: #00007F;
+	color: white;
+}
+
 body
 {
 	color: white;

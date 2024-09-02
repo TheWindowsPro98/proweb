@@ -16,13 +16,32 @@
             text-align:left;
         }
     </style>
+    <header>
+        <a href="index.html"><img src="res/favicons/home.png">Home</a>
+        <a href="roms.html"><img src="res/favicons/cd.png">Back to Romhack Repository</a>
+        <a style="text-decoration: underline;" id="dlChevron"><img src="res/favicons/cd.png">Show Downloads >></a>
+        <a href="res/loose/s1rros/S1RROS.BIN" class="canHide"></a>
+        <a href="res/loose/ssmb1/Supersonic Mario Bros.nes" class="canHide"></a>
+        <a href="res/loose/ssmb4/Supersonic Mario World.sfc" class="canHide"></a>
+        <script>
+            var dlChevron = document.getElementById("dlChevron");
+            var hideClass = document.getElementsByClassName("canHide");
+            dlChevron.addEventListener("click",clickListener);
+            function clickListener()
+            {
+                const downloadStrings = ["Sonic 1 R.R.O.S","Supersonic Mario Bros.","Supersonic Mario World"];
+                for (var i = 0; i < hideClass.length; i++)
+                {
+                    hideClass[i].innerHTML = downloadStrings[i];
+                }
+            }
+        </script>
+    </header>
     <body>
         <h1>Romhacks</h1>
         <h2>The improved page</h2>
-        <a href="index.html">&larr;Home</a><br>
-        <a href="roms.html">&larr;Back to Romhack Repository</a>
         <hr>
-        <h3>Sonic the Hedgehog 1: Random Room of Shit <button onclick="window.location.href='res/loose/s1rros/S1RROS.BIN';">Download</button></h3>
+        <h3>Sonic the Hedgehog 1: Random Room of Shit</h3>
         <p>The first real romhack I made of StH, and probably the last. A few other hacks were made before, but they were really only palette swaps for Sonic.</p>
         <p>This hack includes palette swaps, and 2 (mostly) complete zones, namely Green Hill and Marble.</p>
         <h4>Green Hill</h4>
@@ -33,13 +52,13 @@
         <p>The difficulty working with 256&Cross;256 - based tiles really proved to be a key factor in this. While not by much, I do believe that the level design could have been improved if a 16&Cross;16 - based tile system was used instead.</p>
         <p>That, however, would not fix the amount of blind falls and general dick moves that are in this zone.</p>
         <hr>
-        <h3>Supersonic Mario Bros. <button onclick="window.location.href='res/loose/ssmb1/Supersonic Mario Bros.nes'">Download</button></h3>
+        <h3>Supersonic Mario Bros.</h3>
         <p>My first and only hack of Super Mario Bros.</p>
         <p>The general idea was to loosely recreate the levels of Sonic the Hedgehog within it.</p>
         <p>Obviously, some liberties had to be taken, as SMB1 has more limitations than what meets the eye.</p>
         <p>The hack lasts until Zone 4-2.</p>
         <hr>
-        <h3>Supersonic Mario Bros. 4: Supersonic Mario World <button onclick="window.location.href='res/loose/ssmb4/Supersonic Mario World.sfc'">Download</button></h3>
+        <h3>Supersonic Mario Bros. 4: Supersonic Mario World</h3>
         <p>The same idea as Supersonic Mario Bros, but in Super Mario World instead.</p>
         <p>Also my first Super Mario World romhack.</p>
         <p>Includes SMB's World 1-1 as the title screen level, and is selectable from the world map.</p>
