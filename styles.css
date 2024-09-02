@@ -8,7 +8,8 @@ header
 	outline: 2px outset;
 	background-color: #a0a0a0;
 	color: black;
-	height: 23px;
+	height: min-content;
+	padding-bottom: 3px;
 	text-align: left;
 }
 
